@@ -14,8 +14,8 @@ public class CalculateTips {
         gratuity = subtotal * gratuityRate / 100;
         total = subtotal + gratuity;
 
-        System.out.println("The gratuity is $" + gratuity
-                + " and total is $" + total);
+        System.out.printf("The gratuity is $%.2f and total is $%.2f%n",
+                gratuity, total);
 
         input.close();
     }
